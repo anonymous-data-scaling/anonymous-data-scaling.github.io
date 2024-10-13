@@ -84,8 +84,8 @@
         </div>
         <br>
         <h2 class="subtitle has-text-centered">
-        We show that with proper data scaling, a single-task policy can generalize across <strong>any object</strong> within the same category and <strong>any environment</strong>. 
-        Remarkably, the robot can even be deployed zero-shot in a hot pot restaurant 🍲!
+        We show that with proper data scaling, a single-task policy can generalize well to <strong>any new environment</strong> and 
+        <strong>any new object</strong> within the same category. Remarkably, the robot can even be deployed zero-shot in a hot pot restaurant 🍲!
         </h2>
       </div>
     </div>
@@ -117,7 +117,7 @@
 <br>
 <div class="rows is-centered has-text-centered">
   <h2 class="title is-3" style="margin-bottom: 0.5em; color:#6510ad">Power-Law Data Scaling Laws</h2>
-  <p class="content has-text-justified" style="margin-bottom: 0.5em">The policy's generalization ability to new objects, new environments, or 
+  <p class="content has-text-justified" style="margin-bottom: 0.6em">The policy's generalization ability to new objects, new environments, or 
     both scales approximately as a <strong>power law</strong> with the number of training objects, training environments, or 
     training environment-object pairs, respectively. This is
     evidenced by the correlation coefficient r in the video below.</b>
@@ -138,9 +138,11 @@
 <div class="rows is-centered has-text-centered">
   <h2 class="title is-3" style="margin-bottom: 0.5em; color:#6510ad">Evaluation Videos</h2>
   <p class="content" style="text-align: left">
-    Collecting data in as many environments as possible (e.g., 32 environments), each with one unique 
-    manipulation object and 50 demonstrations, allows training a policy that generalizes well (90% success rate) to 
-    any new environment and object. Below are sample rollouts from <strong>8 unseen testing environments</strong> investigated in the paper.
+    Building upon power-law data scaling laws, we propose an efficient data collection strategy. By 
+    collecting data from numerous environments (e.g., 32 environments), each featuring a unique manipulation 
+    object and 50 demonstrations, we can train a policy that 
+    generalizes effectively—achieving a 90% success rate—to any new environment and object. Below, we 
+    present sample rollouts from <strong>8 unseen testing environments</strong> investigated in the paper.
   </p>
 
   <div class="container block is-centered">
@@ -208,11 +210,10 @@
     <div class="rows">
 
       <div class="container has-text-centered">
-        <h2 class="title is-3" style="margin-bottom: 0.5em; color:#6510ad">More In-The-Wild Autonomous Skills</h2>
+        <h2 class="title is-3" style="margin-bottom: 0.5em; color:#6510ad">More In-The-Wild Environments</h2>
         <p class="content" style="margin-bottom: 1.5em; text-align: left;">
-          We took the robot to various in-the-wild environments such as hot pot restaurants 🍲, cafes ☕, elevators 🛗, fountains ⛲, and 
-          other places where data had not been collected before. We found that the policy's generalization ability 
-          was surprisingly well!
+          We deployed the robot in various in-the-wild environments—including hot pot restaurants 🍲, cafés ☕, elevators 🛗, fountains ⛲, 
+          and other locations where data had not been previously collected. We found that the policy generalized surprisingly well!
         </p>
       </div>
 
@@ -280,7 +281,7 @@
             autoplay
             loop controlsList="nodownload"
             width="99%">
-            <source src="media/videos/wild-autonomous-skills/5.mp4" 
+            <source src="media/videos/wild-autonomous-skills/6.mp4" 
             type="video/mp4">
           </video>
         </div>
@@ -292,7 +293,7 @@
             autoplay
             loop controlsList="nodownload"
             width="99%">
-            <source src="media/videos/wild-autonomous-skills/6.mp4" 
+            <source src="media/videos/wild-autonomous-skills/5.mp4" 
             type="video/mp4">
           </video>
         </div>
